@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html ng-app="mainApp" ng-controller="mainController">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+   		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Library</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+		<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+	</head>
+	<!-- body part starts here -->
+	<body>
+
+		<!-- wrapper starts here -->
+		<div class="wrapper">
+
+			<!-- header part starts here-->
+			<div class="header">
+				<h4 class="left"> Books Library </h4>
+				<div class="right">
+					<input type="text" class="searchbox left" ng-model="searchModel" placeholder="search" />
+					<img src="images/searchicon.png" class="searchIcon left" />
+					<ul class="headerLinks left">
+						<li class="left"><a href="#/allbooks"><img src="images/books.png" /> Books </a></li>
+						<li class="left"><a href="#/videos"><img src="images/video.png" /> videos </a></li>
+						<li class="left"><a href="#/learnings"><img src="images/calender.png"> Learning Schedule </a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- header part ends here -->
+
+			<!-- horizantal-line div starts -->
+			<div class="horizantal-line"></div>
+			<!-- horizantal-line div ends -->
+
+			<!-- top-content starts here -->
+			<div class="top-content">
+				<p class="first-line"> The Ultimate Library </p>
+				<p class="second-line"> Find something new to learn about today.</p>
+			</div>
+			<!-- top-content ends here -->
+
+			<!-- view data starts here -->
+			<div class="container">
+				<div ng-view></div>
+			</div>
+			<!-- view data ends here -->
+
+			<!-- footer starts here -->
+			<div class="footer">
+				<p class="footer-text"> All rights reserved </p>
+			</div>
+			<!-- footer ends here -->
+
+		</div>
+		<!-- wrapper ends here -->
+
+	</body>
+	<!-- body part ends here -->
+
+	<!-- script files starts here -->
+	<script type="text/javascript" src="js/lib/angular.js"></script>
+	<script type="text/javascript" src="js/lib/angular-route.js"></script>
+	<script type="text/javascript" src="js/lib/simplePagination.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+
+	<!-- script files ends here -->
+</html>

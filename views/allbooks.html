@@ -1,0 +1,14 @@
+<div class="books-container">
+	<div class="heading">
+		<h4 class="heading-text-main"> Professional Books </h4>
+		<p class="heading-text-content"> over 100 exclusive books </p>
+	</div>
+	<div class="books-container">
+	<a href="#" ng-repeat="item in books | limitTo:10 | filter:searchModel">
+		<img ng-src={{item.cover}} alt={{item.title}}  class="images"/>
+	</a>
+	</div>
+	<div class="exploreButton">
+		<a href="#/explore">Explore Books</a>
+	</div>
+</div>

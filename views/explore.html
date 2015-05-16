@@ -1,0 +1,41 @@
+<div class="details" ng-controller="searchController">
+	<label>show per page:</label>
+	<select class="show-per-page" ng-options="data for data in limit" ng-model="selectedSize">
+	</select>
+	<label>Search By</label>
+	<select class="search-by" ng-options="value for value in seltype" ng-model="selectedItem">
+	</select>
+	<label>Search By</label>
+	<input type="text" ng-model="searchBy" class="enterToSearch">
+	<div class="icons right">
+		<img class="availableIcon" src="images/available.png" alt="availableIcon" />
+		<label>Available</label>
+		<img class="notavailableIcon" src="images/notavailable.png" alt="notavailableIcon" />
+		<label>Notavailable</label>
+	</div>
+	<div class="clear"></div>
+	<ul class="explored-list">
+		<li class="explored-books left" ng-repeat="item in books | startFrom: pagination.page * pagination.perPage | limitTo:selectedSize | filter: search">
+			<img class="coverIcon left" ng-src={{item.cover}} alt={{item.title}} />
+			<div class="book-info left">
+				<p class="book-name"> {{item.title}} </p>
+				<p class="book-type">Author genre <span>{{item.genre}} </span></p>
+				<p class="book-donor">Donated by <span>{{item.Contributor}} </span></p>
+			</div>
+			<img class="statusIcon right" ng-if="item.status" src="images/available.png" alt="availableIcon" />
+			<img class="statusIcon right" ng-if="!item.status" src="images/notavailable.png" alt="notavailableIcon" />
+		</li>
+	</ul>
+	<div class="clear"></div>
+	<!--
+	<pagination boundary-links="true" total-items="totalItems" ng-model="currentPage" class="pagination-sm" previous-text="&lsaquo;" next-text="&rsaquo;" first-text="&laquo;" last-text="&raquo;"></pagination>
+	-->
+	<ul class="pagination">
+		<li><a href="" ng-click="pagination.prevPage()">&laquo;</a></li>
+  		<li ng-repeat="n in [] | range: pagination.numPages" ng-class="{active: n == pagination.page}">
+  			<a href="" ng-click="pagination.toPageId(n)">{{n + 1}}</a>
+  		</li>
+ 		<li><a href="" ng-click="pagination.nextPage()">&raquo;</a></li>
+	</ul>
+	<div></div>
+</div>

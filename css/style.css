@@ -1,0 +1,176 @@
+/* header part starts here */
+.header
+{
+	height: 60px;
+	background-color:#3D3D5C;
+	margin: 0 auto;
+}
+.header h4{
+	display: inline-block;
+	color: white;
+}
+.searchbox{
+	margin:1em 0em 0em 1em;
+}
+.searchIcon{
+	margin:0em 1em;
+	margin-top: 1.5em;
+}
+.headerLinks li{
+	list-style: none;
+	margin:1em 0em;
+}
+.headerLinks a{
+	text-decoration: none;
+	color: white;
+	margin:1em;
+}
+.horizantal-line{
+	background: images/hr-line.jpeg repeat-x;
+	height: 1px;
+}
+
+/*header part ends here */
+
+/*top-content part starts here */
+.top-content{
+	height: 200px;
+	background-color: black;
+	margin: 0 auto;
+	color: white;
+	padding: 20px;
+}
+.first-line{
+	font-size: 14px;
+	font-style: italic;
+}
+.second-line{
+	font-size: 40px;
+	width: 500px;
+}
+/*top-content part ends here */
+
+/*view styles starts here */
+.container{
+	
+}
+.images{
+	width: 15%;
+	height: 150px;
+	margin: 1%;
+	background-size: 100%;
+}
+.exploreButton{
+	width: 25%;
+	background-color: red;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	cursor: pointer;
+	padding: 1%;
+	text-align: center;
+	font-size: 16px;
+}
+.exploreButton a{
+	text-decoration: none;
+	color: white;
+}
+.books-container{
+	margin-left: 6%;
+}
+.heading-text-main{
+	text-align: center;
+}
+.heading-text-content{
+	text-align: center;
+}
+.video-clips{
+	margin-top: 20px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 16px;
+	font-family: Trebuchet MS;
+}
+.learning-schedule{
+	margin-top: 20px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 16px;
+	font-family: Trebuchet MS;
+}
+.details{
+	margin-top: 20px;
+}
+.books-container{
+	margin-top: 20px;
+}
+.explored-list{
+	margin-top: 20px;
+}
+.explored-books{
+	width: 35%;
+	height: 100px;
+	background-color: #F0F0F5;
+	list-style: none;
+	margin: 0% 5% 0.5% 5%;
+}
+.explored-books img{
+	width: 80px;
+	height: 80px;
+	margin: 10px;
+	background-size: 100%;
+}
+.explored-books:first-child{
+
+}
+.book-info{
+	width: 50%;
+	margin-top: 15px;
+	font-size: 12px;
+	line-height: 13px;
+	font-family: Trebuchet MS;
+}
+.book-name{
+	color: black;
+	font-size: 13px;
+}
+.book-type{
+	color: #47476B;
+}
+.book-type span{
+	color: black;
+}
+.book-donor{
+	color: #47476B;
+}
+.book-donor span{
+	color: black;
+}
+.statusIcon{
+	width: 32px !important;
+	height: 32px !important;
+	margin-top: 32px !important;
+	margin-right: 30px !important;
+	background-size: 100%;
+}
+/*view styles ends here */
+
+/*footer part starts here */
+.footer-text{
+	background-color: black;
+}
+
+/*footer part ends here */
+
+
+
+
+
+.left{
+	float: left;
+}
+.right{
+	float: right;
+}
+.clear{
+	clear: both;
+}
